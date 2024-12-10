@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hell_backend": {
+      "main": "src/hell_backend/main.mo",
+      "type": "motoko"
+    },
+    "hell_frontend": {
+      "dependencies": [
+        "hell_backend"
+      ],
+      "source": [
+        "src/hell_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hell_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
